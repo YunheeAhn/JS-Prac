@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- <script type="text/javascript" src="ex.js"></script> -->
+    <title>Todo - List</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo</h1>
+        <div id="inputField">
+          <input type="text" id="todoInput" placeholder="할 일 추가하기" onkeydown="keyCodeCheck()">
+          <button type="button" id="addBtn" onclick="createTodo()">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <ul id="todoList">
+      
+        </ul>
+
+        <div class="delete-btn-wrap">
+          <button onclick="removeList()">전체 삭제</button>
+        </div>
+      </div>
+</body>
+</html>
